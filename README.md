@@ -1,6 +1,6 @@
 
 ```
-test
+blog-vue
 ├─ .eslintrc.js
 ├─ babel.config.js
 ├─ package-lock.json
