@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3370105 */
+  src: url('iconfont.woff2?t=1652865462665') format('woff2'),
+       url('iconfont.woff?t=1652865462665') format('woff'),
+       url('iconfont.ttf?t=1652865462665') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-content:before {
+  content: "\e7f4";
+}
+
+.icon-history:before {
+  content: "\e60e";
+}
+
+.icon-update:before {
+  content: "\e789";
+}
+
+.icon-statistics:before {
+  content: "\e610";
+}
+
+.icon-certify:before {
+  content: "\e66a";
+}
+
+.icon-eye:before {
+  content: "\e86a";
+}
+
+.icon-emoji:before {
+  content: "\e600";
+}
+
+.icon-linkmore:before {
+  content: "\e60a";
+}
+
+.icon-zhiding:before {
+  content: "\e63d";
+}
+
+.icon-comments:before {
+  content: "\e7a9";
+}
+
+.icon-like:before {
+  content: "\e869";
+}
+
+.icon-backtop:before {
+  content: "\e8d8";
+}
+
+.icon-chart:before {
+  content: "\e665";
+}
+
+.icon-bell:before {
+  content: "\e603";
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-github:before {
+  content: "\e885";
+}
+
+.icon-QQ:before {
+  content: "\e887";
+}
+
+.icon-bookmark:before {
+  content: "\e624";
+}
+
+.icon-calendar:before {
+  content: "\e8b4";
+}
+
+.icon-menu:before {
+  content: "\e653";
+}
+
+.icon-more:before {
+  content: "\e6f3";
+}
+
+.icon-record:before {
+  content: "\e61c";
+}
+
+.icon-classification:before {
+  content: "\e658";
+}
+
+.icon-tag:before {
+  content: "\e602";
+}
+
+.icon-album:before {
+  content: "\e612";
+}
+
+.icon-talk:before {
+  content: "\e628";
+}
+
+.icon-home:before {
+  content: "\e60d";
+}
+
+.icon-find:before {
+  content: "\e608";
+}
+
+.icon-entertainment:before {
+  content: "\e679";
+}
+
+.icon-search:before {
+  content: "\e652";
+}
+
+.icon-about:before {
+  content: "\e6a0";
+}
+
+.icon-chat:before {
+  content: "\e95a";
+}
+
+.icon-login:before {
+  content: "\e611";
+}
+
+.icon-link:before {
+  content: "\e609";
+}
+
