@@ -41,12 +41,10 @@
 </template>
 
 <script setup>
-import CommentReplyReply from './CommentReply.vue'
-import CommentPaging from './CommentPaging.vue'
 import CommentEmoji from './CommentEmoji.vue'
-import EmojiList from '@/assets/js/emoji'
 import { useStore } from 'vuex'
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
+// import EmojiList from '@/assets/js/emoji'
 
 const store = useStore()
 const touristAvatar = store.state.userImg
@@ -58,7 +56,7 @@ function addEmoji(key) {
   commentContent.value += key
 }
 
-const commentList = reactive([])
+// const commentList = reactive([])
 </script>
 
 <style scoped>

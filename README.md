@@ -1,4 +1,15 @@
-# blog-vue项目结构
+# 技术栈
+
+**vue3+webpack5+vuex+vue-router+element-plus**
+
+# 项目特点
+
+* UI设计参考hexo-theme-butterfly，并使用element-plus重构，美观简洁。
+* 使用webpack5搭建vue3开发环境，并从加快打包速度和减少打包体积两方面，进行一定程度上的性能优化。
+* 体验vue3组合式API搭配vuex+vue-router。
+
+# 项目结构
+
 ```
 blog-vue
 ├─ .eslintrc.js

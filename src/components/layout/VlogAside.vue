@@ -75,11 +75,9 @@
 <script setup>
 import { computed, onUpdated } from 'vue'
 import { useStore } from 'vuex'
-import { useRouter } from 'vue-router'
+
 
 const store = useStore().state
-
-const router = useRouter()
 
 const userImg = store.userImg
 

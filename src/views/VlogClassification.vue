@@ -57,7 +57,7 @@ a {
   font-weight: 700;
 }
 .category-container {
-  margin: rem 3rem 3rem 3rem;
+  margin: 1rem 3rem 3rem 3rem;
 }
 .category-title {
   text-align: center;

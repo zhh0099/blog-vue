@@ -21,6 +21,7 @@
 import EmojiList from '@/assets/js/emoji'
 import { defineProps, defineEmits} from 'vue'
 
+// eslint-disable-next-line no-unused-vars
 const props = defineProps({
   chooseEmoji: {
     type: Boolean,

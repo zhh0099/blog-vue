@@ -116,7 +116,6 @@ const articleCover = store.articleCover
 const articleTitle = store.articleTitle
 const articleTime = store.articleTime
 const categoryName = store.categoryName
-const tagName = store.tagName
 const userName = store.userName
 const articleContent = store.articleContent
 const viewsCount = store.viewsCount

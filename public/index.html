@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/element-plus@2.2.2/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/element-plus@2.2.2/theme-chalk/display.css">
-    <!-- 导入 Vue 3 -->
-    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
-    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.prod.js"></script>
-    <script src="https://unpkg.com/vuex@4.0.2/dist/vuex.global.prod.js"></script>
-    <script src="https://unpkg.com/element-plus@2.2.2/dist/index.full.min.js"></script>
     <title>
       <%= htmlWebpackPlugin.options.title %>
     </title>
+    <!-- 使用CDN引入CSS -->
+    <% for (let i in htmlWebpackPlugin.options.CDN && htmlWebpackPlugin.options.CDN.css) { %>
+      <link href="<%= htmlWebpackPlugin.options.CDN.css[i] %>" rel="stylesheet">
+    <% } %>
+    <!-- 使用CDN引入js -->
+    <% for (var i in htmlWebpackPlugin.options.CDN && htmlWebpackPlugin.options.CDN.js) { %>
+      <script src="<%= htmlWebpackPlugin.options.CDN.js[i] %>"></script>
+    <% } %>
 
   </head>
 

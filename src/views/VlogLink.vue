@@ -23,7 +23,7 @@
           v-for="item of friendLinkList"
           :key="item.id"
         >
-          <a :href="item.linkAddress" target="_blank">
+          <a :href="item.linkAddress" target="_blank" onclick="return false;">
             <el-avatar :size="65" :src="item.linkAvatar" class="link-avatar" />
             <div class="link-friend">
               <div class="link-name">{{ item.linkName }}</div>
@@ -39,7 +39,7 @@
       <blockquote>
         <div>名称：{{ userName }}</div>
         <div>简介：{{ userInfo }}</div>
-        <div>头像：{{ userAvatar }}</div>
+        <div>头像：{{ userAvatarSelf }}</div>
       </blockquote>
       <div class="margin-t margin-b">需要交换友链的可在下方留言💖</div>
       <blockquote>
@@ -60,25 +60,26 @@ const linkBackground = store.linkBackground
 const userName = store.userName
 const userInfo = store.userInfo
 const userAvatar = store.userImg
+const userAvatarSelf='https://xxxxxxx.com'
 
 const friendLinkList = [
   {
     id: '0001',
-    linkAddress: 'https://gahotx.cn/',
+    linkAddress: '#',
     linkAvatar: userAvatar,
     linkName: 'Just Myself-1',
     linkIntro: 'just do it!',
   },
   {
     id: '0002',
-    linkAddress: 'https://gahotx.cn/',
+    linkAddress: '#',
     linkAvatar: userAvatar,
     linkName: 'Just Myself-2',
-    linkIntro: 'never say never',
+    linkIntro: '',
   },
   {
     id: '0003',
-    linkAddress: 'https://gahotx.cn/',
+    linkAddress: '#',
     linkAvatar: userAvatar,
     linkName: 'Just Myself-3',
     linkIntro: 'never say never',

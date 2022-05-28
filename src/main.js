@@ -7,7 +7,6 @@ import 'animate.css';
 import "@/assets/css/global.css"
 import "./assets/fonts/iconfont.css"
 
-
 // 全局后置守卫
 // 性能待考虑
 // router.afterEach(()=>{

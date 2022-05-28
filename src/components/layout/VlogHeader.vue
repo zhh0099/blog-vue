@@ -114,7 +114,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
@@ -131,9 +130,9 @@ function openDrawer() {
   store.commit('DrawerNegate')
 }
 
-function openLogin() {
-  store.commit('LoginNegate')
-}
+// function openLogin() {
+//   store.commit('LoginNegate')
+// }
 </script>
 
 <style scoped>

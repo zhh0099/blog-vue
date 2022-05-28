@@ -7,7 +7,7 @@
     <!-- 侧边栏 -->
     <VlogAside></VlogAside>
     <!-- 主体 -->
-    <el-main style="overflow: visible">
+    <el-main style="overflow: visible" v-loading="loading">
       <router-view></router-view>
     </el-main>
     <!-- 页脚 -->
@@ -27,12 +27,12 @@ import VlogFooter from './components/layout/VlogFooter.vue'
 import SearchModel from './components/model/SearchModel.vue'
 import BackTop from './components/BackTop.vue'
 import { ref, onMounted } from 'vue'
-import { init } from 'tocbot'
 
 // 根据滚动改变header主题
 let nav = ref('nav')
+const loading = ref(false)
 // let homeflag=document.getElementsByTagName('main').firstChild;
-function scroll(e) {
+function scroll() {
   let scrollTop =
     window.pageYOffset ||
     document.documentElementscrollTop ||
@@ -53,27 +53,8 @@ function scroll(e) {
       nav.value = 'nav'
     }
   }
-  // if (scrollTop > 340) {
-  //   nav.value = 'nav-fixed'
-  // } else {
-  //   nav.value = 'nav'
-  // }
 }
-// 根据滚动方向调整header是否显示
-// function wheel(e) {
-//   let wheelDirection = e.deltaY
-//   let scrollTop =
-//     window.pageYOffset ||
-//     document.documentElementscrollTop ||
-//     document.body.scrollTop
-//   const header = document.querySelector('.el-header')
-//   // console.log(header)
-//   if (wheelDirection == 125 && scrollTop == 0) {
-//     header.style.display = 'none'
-//   } else if (wheelDirection == -125) {
-//     header.style.display = 'block'
-//   }
-// }
+
 onMounted(() => {
   window.addEventListener('scroll', scroll)
   // window.addEventListener('wheel', wheel)

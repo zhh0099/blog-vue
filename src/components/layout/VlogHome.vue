@@ -383,13 +383,13 @@
 </template>
 
 <script setup>
-import TalkSwiper from '@/components/TalkSwiper.vue'
 
 import { ref } from 'vue'
 import { useStore } from 'vuex'
 
 let tip = ref(false)
-let time = ref('2022-05-03')
+let time = ref('2022-05-02')
+
 
 const store = useStore().state
 // home
